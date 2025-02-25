@@ -1,0 +1,10 @@
+Package: WVF
+Type: Package
+Title: Selecting the best Span for Loess mode and best df for Smooth Spline Models
+Version: 0.1.0
+Author: William V. Fullerton
+Maintainer: The package maintainer <williamfullerton1.0@icloud.com>
+Description: This packages has two functions, Best_Loess_Span and Best_Smooth_Spline_df, to determine the best span and df value respectively. Under these functions, we take in a data set with two variables, and output its respective best span or df value to use. This is determined based on the MSE method, of breaking the data into a training and testing set, and then seeing which span or df value produces the lowest resulting error.
+License: NA
+Encoding: UTF-8
+LazyData: true
