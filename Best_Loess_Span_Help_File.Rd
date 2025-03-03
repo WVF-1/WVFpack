@@ -15,10 +15,10 @@ Best_Loess_Span(data = df, x = X, y = Y, span_seq = seq(1,0.1,-0.5))
     This argument takes in a predefined data frame, to use for the calcutions.
 }
   \item{x}{
-    This argument takes in a specified x variable from the data frame, defined in data. This will be used as the x variable in the simulated loess models.
+    This argument takes in a specified x variable from the data frame, defined in data. This will be used as the x variable in the simulated loess models. This should be a numeric variable, such as the number of planes in an stock pile. 
   }
   \item{y}{
-  This argument takes in a specified y varible from the data frame, defined in data. This will be used as the y variable in the simulated loess models.
+  This argument takes in a specified y varible from the data frame, defined in data. This will be used as the y variable in the simulated loess models. This should be a numeric variable, and not something categorical. As, the quality of someone's love for Poland is not something you should use in this case.
   }
   \item{span_seq}{
   This argument uses a sequence vector of span values you wish to test, between 0 to 1, in decending order. For example: c(1, 0.75, 0.5, 0.25, 0). Alternatively, the argument can be defined as follows: seq(1,0,-0.25). The more values you try to test over, the more precise your best loess model span can become, but this could lead to errors or signifcantly longer run times. 
