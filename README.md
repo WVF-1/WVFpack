@@ -13,6 +13,7 @@ Easy to understand and reproducible examples of each function within the package
 # Best_Loess_Span
 ```r
 library(WVFpack)
+
 # Example usage
 optimal_span <- Best_Loess_Span(data = my_data,
                                 x = "predictor_variable",
@@ -27,6 +28,7 @@ loess.mod <- loess(response_variable ~ predictor_variable, data = my_data, span 
 # Best_Smooth_Spline_df
 ```r
 library(WVFpack)
+
 # Example usage
 optimal_df <- Best_Smooth_Spline_df(data = my_data,
                                     x = "predictor_variable",
