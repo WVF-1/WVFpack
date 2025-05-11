@@ -8,3 +8,4 @@ WVFpack is an R package designed to assist data scientists and statisticians in 
 - **Customizable Parameter Sequences:**  Allows users to define custom sequences of span or df values to explore during the optimization process.
 
 ## Usage
+Best_Loess_Span(data, x, y, span_seq = seq(1,0.5,-0.05), valid_method = "Standard")
