@@ -1,3 +1,10 @@
-This is a purpose built R package for data scientists and others who utilize data modeling. This package contains two functions Best_Loess_Span and Best_Smooth_Spline_df, for calculating the best span value to use during loess modeling, and the best df value to use during smooth spline modeling respectively. This is achieved through spliting the input data into a training and a testing set, as determined by the valid_method parameter. Then, the background code of the function will run a lowest mean square error (MSE) test along all of the defined span or df values, as defined in the span_seq and df_seq parameter, and then return the value(s) with the lowest corresponding MSE.
+## Overview
+WVFpack is an R package designed to assist data scientists and statisticians in selecting optimal parameters for non-parametric regression models. Specifically, it provides tools to determine the best span for LOESS models and the best degrees of freedom (df) for smoothing spline models. The package automates the process of parameter tuning by evaluating model performance across a range of parameter values and selecting the one that minimizes the Mean Squared Error (MSE) on a validation set.
 
-This will allow for a quick and easy selection of which span and df value to use when modeling data. This eliminates the need to by hand run simulations on your data, but rahter automates it so that you can get to the heart of your data more quickly and efficiently.
+## Features
+- **Best_Loess_Span:**  Automatically identifies the optimal span parameter for LOESS models by evaluating MSE across a specified range of span values.
+- **Best_Smooth_Spline_df:**  Determines the optimal degrees of freedom for smoothing spline models by assessing MSE over a defined range of df values.
+- **Flexible Validation Methods:**  Supports various validation techniques, including k-fold cross-validation and leave one out cross validation (LOOCV), to assess model performance.
+- **Customizable Parameter Sequences:**  Allows users to define custom sequences of span or df values to explore during the optimization process.
+
+## Usage
