@@ -8,9 +8,11 @@ WVFpack is an R package designed to assist data scientists and statisticians in 
 - **Customizable Parameter Sequences:**  Allows users to define custom sequences of span or df values to explore during the optimization process.
 
 ## Usage
+Easy to understand and reproducible examples of each function within the package.
 
 # Best_Loess_Span
-```r library(WVFpack)
+```r
+library(WVFpack)
 # Example usage
 optimal_span <- Best_Loess_Span(data = my_data,
                                 x = "predictor_variable",
@@ -23,7 +25,8 @@ loess.mod <- loess(response_variable ~ predictor_variable, data = my_data, span 
 ```
 
 # Best_Smooth_Spline_df
-```r library(WVFpack)
+```r
+library(WVFpack)
 # Example usage
 optimal_df <- Best_Smooth_Spline_df(data = my_data,
                                     x = "predictor_variable",
@@ -31,6 +34,6 @@ optimal_df <- Best_Smooth_Spline_df(data = my_data,
                                     df_seq = seq(100, 50, -10),
                                     valid_method = "kfold")
 
-# Create a Loess model with the optimal span parameter
+# Create a smooth spline model with the optimal df parameter
 smooth.mod <- smooth.spline(predictor_variable, response_variable, data = my_data, df = optimal_df)
 ```
