@@ -16,4 +16,6 @@ WVFpack is an R package designed to assist data scientists and statisticians in 
                                                 y = "response_variable",
                                                 span_seq = seq(1, 0.5, -0.05),
                                                 valid_method = "LOOCV")
+# Create a Loess model with the optimal span parameter
+loess.mod <- loess(response_variable ~ predictor_variable, data = my_data, span = optimal_span)
 ```
