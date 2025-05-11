@@ -10,3 +10,10 @@ WVFpack is an R package designed to assist data scientists and statisticians in 
 ## Usage
 <pre> ### Best_Loess_Span ```r library(WVFpack) # Example usage optimal_span <- Best_Loess_Span( data = my_data, x = "predictor_column", y = "response_column", span_seq = seq(1, 0.5, -0.05), valid_method = "Standard" ) print(optimal_span) ``` 
 ### Best_Smooth_Spline_df ```r library(WVFpack) # Example usage optimal_df <- Best_Smooth_Spline_df( data = df, x = "X", y = "Y", df_seq = seq(100, 50, -10), valid_method = "Standard" ) print(optimal_df) ``` </pre>
+```r library(WVFpack)
+# Example usage optimal_span <- Best_Loess_Span(data = my_data,
+                                                x = "predictor_variable",
+                                                y = "response_variable",
+                                                span_seq = seq(1, 0.5, -0.05),
+                                                valid_method = "LOOCV")
+```
