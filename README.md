@@ -23,6 +23,7 @@ optimal_span <- Best_Loess_Span(data = my_data,
 
 # Create a Loess model with the optimal span parameter
 loess.mod <- loess(response_variable ~ predictor_variable, data = my_data, span = optimal_span)
+summary(loess.mod)
 ```
 
 # Best_Smooth_Spline_df
@@ -38,4 +39,5 @@ optimal_df <- Best_Smooth_Spline_df(data = my_data,
 
 # Create a smooth spline model with the optimal df parameter
 smooth.mod <- smooth.spline(predictor_variable, response_variable, data = my_data, df = optimal_df)
+summary(smooth.mod)
 ```
